@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3: If Statements</title>
+</head>
+<body>
+
+  <h1> Welcome Onboard!</h1>
+  <h4> Click the Register button below to Create your Account, or Click login if you already have an account! </h4>
+  <button type="button" id="rgBtn"> <h4><b> REGISTER </b></h4></button>  <br><br>  
+  <div id="register">
+    <h2>Create your Account</h2>
+    <p> Kindly Provide Your Information Here To Get Started! </p>
+    <form id="rgst" onsubmit="submitForm(event)">
+      <label for="firstName"> <b> First Name: </b></label>
+        <input type="text" name="firstName" id="firstName" placeholder="Please enter your first name" style="font-style: italic;" required>
+      <label for="lastName"> <b> Last Name: </b></label>
+        <input type="text" name="lastName" id="lastName" placeholder="Please enter your last name" style="font-style: italic;" required> <br> <br>
+      <label for="uName"> <b> Username: </b> </label>
+        <input type="text" name="uName" id="uName" placeholder="Please choose a unique username" style="font-style: italic;" required>
+      <label for="email"> <b> Email Address: </b></label> 
+        <input type="email" name="email" id="email" placeholder="Kindly enter your email" style="font-style: italic;" required> <br> <br>
+      <label for="password"> <b> Password: </b> 
+        <input type="password" name="password" id="password" placeholder="Please choose a unique password" style="font-style: italic;" required>
+      </label> 
+      <label for="confirm_password"> <b> Confirm Password: </b> 
+        <input type="password" name="confirm_password" id="confirm_password" placeholder="Please re-enter your password" style="font-style: italic;" required onkeyup='check();'> <br> 
+        <span id='message'></span> <br>
+      </label> 
+      <button type="submit"><b> SIGN UP </b></button>
+      <h2 id="output"></h2>
+    </form>
+  </div>
+
+  <div id="login">
+
+    <h2> SIGN IN </h2>
+    <p> Kindly Enter Your Login Information to Get Signed In! </p>
+    <button type="button" id="lgBtn"> <h4><b> LOGIN </b></h4> </button> <br>
+
+  <form id="lgn" onsubmit="submitForm(event)">
+      <label><b> Username: </b></label>
+      <input type="text" name="uName" id="uName"> <br> <br>
+      <label><b> Password: </b></label>
+      <input type="password" name="password" id="password"> <br> <br>
+      <button type="submit"><b> SIGN IN </b></button> 
+    </form>
+    <h2 id="output1"></h2>
+  </div>
+
+  
+</body>
+<script src="assignment.js"></script>
+</html>
